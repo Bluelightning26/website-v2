@@ -23,7 +23,7 @@ import '../styles/globals.scss';
       margin-right: 1rem;
       color: var(--white);
       text-decoration: none;
-
+      text-shadow: 0.1rem 0.1rem 0.1rem var(--white-40);
       /*
       -webkit-text-stroke: #{$stroke-size} var(--white);
       text-shadow: 2px 0 0 var(--white-40),
@@ -35,24 +35,24 @@ import '../styles/globals.scss';
       1px -1px 0 var(--white-40),
       -1px 1px 0 var(--white-40);
       */
+
+      &:hover {
+        color: var(--yellow);
+        text-shadow: 0.1rem 0.1rem 0.1rem var(--yellow-40);
+
+        /*
+        -webkit-text-stroke: #{$stroke-size} var(--yellow-40);
+        text-shadow: 2px 0 0 var(--yellow-40),
+        -2px 0 0 var(--yellow-40),
+        0 2px 0 var(--yellow-40),
+        0 -2px 0 var(--yellow-40),
+        1px 1px 0 var(--yellow-40),
+        -1px -1px 0 var(--yellow-40),
+        1px -1px 0 var(--yellow-40),
+        -1px 1px 0 var(--yellow-40);
+         */
+      }
     }
-
-    a:hover {
-      color: var(--yellow);
-
-      /*
-      -webkit-text-stroke: #{$stroke-size} var(--yellow-40);
-
-      text-shadow: 2px 0 0 var(--yellow-40),
-      -2px 0 0 var(--yellow-40),
-      0 2px 0 var(--yellow-40),
-      0 -2px 0 var(--yellow-40),
-      1px 1px 0 var(--yellow-40),
-      -1px -1px 0 var(--yellow-40),
-      1px -1px 0 var(--yellow-40),
-      -1px 1px 0 var(--yellow-40);
-       */
-    }
-
   }
+
 </style>
