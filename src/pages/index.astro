@@ -1,5 +1,5 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <html lang="en">
@@ -10,7 +10,18 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
+
 	<body>
-		<h1>Astro</h1>
+	<BaseLayout />
+	<div style="display: flex; align-items: center; justify-content: space-between;">
+		<div>
+			<h1>Hello!</h1>
+			<h1>I'm Dhyan</h1>
+		</div>
+		<img src="/dhyan.jpg" alt="Astro Logo"
+			 style="border-radius: 50%; width:37rem; margin-left: 1rem;"/>
+	</div>
+
+
 	</body>
 </html>

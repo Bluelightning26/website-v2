@@ -1,0 +1,58 @@
+---
+import '../styles/globals.scss';
+---
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/projects/">Projects</a>
+  <a href="/contact">Contact</a>
+</nav>
+
+<style lang="scss">
+  $stroke-size: 1px;
+
+  nav {
+    background-color: var(--navbar-color);
+    padding: 1rem;
+    margin-right: 13rem;
+    border-radius: 1.25rem;
+    font-size: 3.75rem;
+
+    a {
+      margin-right: 1rem;
+      color: var(--white);
+      text-decoration: none;
+
+      /*
+      -webkit-text-stroke: #{$stroke-size} var(--white);
+      text-shadow: 2px 0 0 var(--white-40),
+      -2px 0 0 var(--white-40),
+      0 2px 0 var(--white-40),
+      0 -2px 0 var(--white-40),
+      1px 1px 0 var(--white-40),
+      -1px -1px 0 var(--white-40),
+      1px -1px 0 var(--white-40),
+      -1px 1px 0 var(--white-40);
+      */
+    }
+
+    a:hover {
+      color: var(--yellow);
+
+      /*
+      -webkit-text-stroke: #{$stroke-size} var(--yellow-40);
+
+      text-shadow: 2px 0 0 var(--yellow-40),
+      -2px 0 0 var(--yellow-40),
+      0 2px 0 var(--yellow-40),
+      0 -2px 0 var(--yellow-40),
+      1px 1px 0 var(--yellow-40),
+      -1px -1px 0 var(--yellow-40),
+      1px -1px 0 var(--yellow-40),
+      -1px 1px 0 var(--yellow-40);
+       */
+    }
+
+  }
+</style>

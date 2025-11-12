@@ -1,0 +1,47 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --black: #000000;
+  --red: #FF9898;
+  --orange: #FFC399;
+  --yellow: rgba(255, 238, 153);
+  --yellow-40: rgba(255, 238, 153, 40);;
+  --blue: #99DDFF;
+  --purple: #AA99FF;
+  --pink: #FF99FF;
+  --background-color: #9485E0;
+  --navbar-color: #85C2E0;
+
+}
+
+
+
+
+
+*{
+
+
+  // <weight>: Use a value from 100 to 900
+  // <uniquifier>: Use a unique and descriptive class name
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+
+
+
+
+  h1 {
+    color: var(--white);
+    font-size: 6.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 2rem;
+}
