@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {INFO} from "../consts";
+
+
+---
+
+<BaseLayout pageTitle="About Me">
+    <div class="content">
+    <div class="contact-layout">
+        <div class="contact-title">
+            <h1>Reach Out</h1>
+
+            <img src="/dhyan.jpg" alt="dhyan" class="contact-icon" />
+        </div>
+        <div class="contact-fields">
+            <p>
+                <i class="bi bi-envelope-fill"></i>
+                <a href={`mailto:${INFO.email}`}> {INFO.email}</a>
+            </p>
+            <p>
+                <i class="bi bi-github"></i>
+                <a href={`https://github.com/${INFO.github}`}>{INFO.github}</a>
+            </p>
+
+        </div>
+    </div>
+    </div>
+</BaseLayout>
+
+<style lang="scss">
+  .contact-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  .contact-title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    h1 {
+      font-size: 5rem;
+      margin: 0;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .contact-icon {
+      margin-top: 2rem;
+      width: 10em;
+      height: 10em;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .contact-fields {
+    margin-top: 10%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    p {
+      font-size: 2rem;
+      margin: 1rem 0;
+      text-align: left;
+    }
+    i {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+      padding: 0.5rem;
+    }
+  }
+
+</style>

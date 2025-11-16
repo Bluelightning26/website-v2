@@ -5,23 +5,32 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 
 const { pageTitle } = Astro.props;
+
 ---
 
 <html lang="en">
-<head>
-    <Base />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href="../assets/favicon.png" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-    </style>
-    <meta name="generator" content={Astro.generator} >
-    <title>{pageTitle}</title>
-</head>
-<body>
-<Navigation />
-<slot />
+    <head>
+        <Base />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" initial-scale="1"/>
+        <link rel="icon" type="image/png" href="../assets/favicon.png" />
 
-</body>
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        </style>
+
+        <meta name="generator" content={Astro.generator} >
+        <title>{pageTitle}</title>
+    </head>
+
+    <body>
+        <Navigation />
+
+        <slot />
+
+        <Footer />
+    </body>
 </html>

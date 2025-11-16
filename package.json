@@ -8,5 +8,8 @@
   "devDependencies": {
     "astro": "^5.15.5",
     "sass-embedded": "^1.93.3"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1"
   }
 }

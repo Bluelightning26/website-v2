@@ -1,34 +1,62 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Landing from '../components/Landing.astro';
 ---
 
 <BaseLayout pageTitle="Home">
-	<div style="display: flex; align-items: center; justify-content: space-between;">
-		<div>
-			<h1>Hello!</h1>
-			<h1>I'm Dhyan</h1>
-			<h2>High School Junior from Boston</h2>
+	<Landing />
+
+	<div style="margin-top: 6rem;"></div>
+
+	<div class="content">
+		<div class="grid">
+			<div class="grid-item">
+				<i class="bi bi-lightbulb" aria-label="Projects"></i>
+				<p>
+					Creating
+					<br><br><br>
+					I currently focus on creating projects that either help me expand my skillset, or make my life just a little bit easier
+				</p>
+			</div>
+			<div class="grid-item">
+				<i class="bi bi-journal-code" aria-label="Learning"></i>
+				<p>
+					Activities
+					<br><br><br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+			<div class="grid-item">
+				<i class="bi bi-people" aria-label="Work"></i>
+				<p>
+					Experience
+					<br>Part time @ Hack Club
+					<br><br>
+					xyzabcdefg A global nonprofit network of high school makers where young people build the agency & the technical talent to think big & do big things in the world.
+				</p>
+			</div>
 		</div>
-		<img src="/dhyan.jpg" alt="Astro Logo" class="profile-img" />
 	</div>
-
-	<style lang="scss">
-		.profile-img {
-			border-radius: 50%;
-			width: 32rem;
-			height: 32rem;
-			margin-left: 1rem;
-			margin-top: 3rem;
-			margin-right: 3rem;
-			box-sizing: border-box;
-			transition: all 0.5s ease-in-out;
-
-			&:hover {
-				transform: rotate(7deg);
-				box-shadow: 0 0 2.5rem 5rem var(--yellow-40);
-				border: 0.5rem solid var(--yellow-40);
-				transition: all 0.5s ease-in-out;
-			}
-		}
-	</style>
 </BaseLayout>
+
+<style lang="scss">
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 2rem;
+		margin: 2rem;
+	}
+	.grid-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		i {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+
+	}
+
+</style>

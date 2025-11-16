@@ -64,7 +64,7 @@
     font-size: 1.25rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    text-shadow: 0.1rem 0.1rem 0.1rem var(--white-40);
+    text-shadow: 0.05rem 0.05rem 0.05rem var(--white-40);
   }
 
 
@@ -74,3 +74,18 @@
     padding: 1rem;
     margin: 1rem;
   }
+
+  i {
+    color: var(--white);
+    cursor: pointer;
+    align-items: center;
+  }
+
+.content {
+  display: flex;
+  border-radius: 2rem;
+  margin: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+  background: var(--background-color);
+}

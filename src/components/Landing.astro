@@ -1,0 +1,32 @@
+---
+// landing for home page
+import { INFO } from '../consts';
+---
+<div style="display: flex; align-items: center; justify-content: space-between;">
+    <div>
+        <h1>Hello!</h1>
+        <h1>I'm {INFO.name}</h1>
+        <h2>{INFO.education} {INFO.gradeLevel} from {INFO.location}</h2>
+    </div>
+    <img src="/dhyan.jpg" alt="Astro Logo" class="profile-img" />
+</div>
+
+<style lang="scss">
+  .profile-img {
+    border-radius: 50%;
+    width: 32rem;
+    height: 32rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      transform: rotate(7deg);
+      box-shadow: 0 0 2.5rem 5rem var(--yellow-40);
+      border: 0.5rem solid var(--yellow-40);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+</style>
