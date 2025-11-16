@@ -2,17 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-
-	<body>
-	<BaseLayout />
+<BaseLayout pageTitle="Home">
 	<div style="display: flex; align-items: center; justify-content: space-between;">
 		<div>
 			<h1>Hello!</h1>
@@ -20,12 +10,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<h2>High School Junior from Boston</h2>
 		</div>
 		<img src="/dhyan.jpg" alt="Astro Logo" class="profile-img" />
-
 	</div>
-
-
-	</body>
-
 
 	<style lang="scss">
 		.profile-img {
@@ -44,8 +29,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				border: 0.5rem solid var(--yellow-40);
 				transition: all 0.5s ease-in-out;
 			}
-
 		}
-
 	</style>
-</html>
+</BaseLayout>

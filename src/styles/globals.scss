@@ -9,6 +9,7 @@
   --blue: #99DDFF;
   --purple: #AA99FF;
   --pink: #FF99FF;
+  --pink-40: rgba(255, 153, 255, 0.4);
   --background-color: #9485E0;
   --navbar-color: #85C2E0;
 
@@ -19,8 +20,6 @@
 
 
 * {
-
-
   // <weight>: Use a value from 100 to 900
   // <uniquifier>: Use a unique and descriptive class name
   font-family: "Inter", sans-serif;
@@ -28,6 +27,8 @@
   font-weight: 800;
   font-style: normal;
 
+  //defaults
+  color: var(--white);
 }
 
 
@@ -53,6 +54,13 @@
     text-shadow: 0.1rem 0.1rem 0.1rem var(--white-40);
   }
 
+  p {
+    color: var(--white);
+    font-size: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--white-40);
+  }
 
 
   img {
