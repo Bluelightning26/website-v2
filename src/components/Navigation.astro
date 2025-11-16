@@ -13,11 +13,15 @@ import '../styles/globals.scss';
   $stroke-size: 1px;
 
   nav {
+
+
     background-color: var(--navbar-color);
     padding: 1rem;
     margin-right: 13rem;
     border-radius: 1.25rem;
     font-size: 3.75rem;
+    position: relative; // maybe also 'fixed'/'sticky'
+    z-index: 1000;
 
     a {
       margin-right: 1rem;
