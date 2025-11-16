@@ -1,13 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Landing from '../components/Landing.astro';
-import LogoLoopSection from '../components/LogoLoop.jsx';
 ---
 
 <BaseLayout pageTitle="Home">
 	<Landing />
 
 	<div style="margin-top: 6rem;"></div>
+
 	<div class="content">
 		<div class="grid">
 			<div class="grid-item">
@@ -37,8 +37,6 @@ import LogoLoopSection from '../components/LogoLoop.jsx';
 			</div>
 		</div>
 	</div>
-
-	<LogoLoopSection client:load />
 </BaseLayout>
 
 <style lang="scss">
