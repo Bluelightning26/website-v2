@@ -48,6 +48,15 @@
       text-shadow: 0.45rem 0.45rem 0.45rem var(--white-40);
       transition: text-shadow 0.3s ease-in-out;
     }
+
+    @media (max-width: 1200px) {
+      font-size: 4rem;
+      margin: 1rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 2rem;
+      margin: 0rem;
+    }
   }
 
   h2 {
@@ -57,6 +66,12 @@
     padding-left: 2rem;
     padding-right: 2rem;
     text-shadow: 0.1rem 0.1rem 0.1rem var(--white-40);
+
+    @media (max-width: 1200px) {
+      font-size: 1.625rem;
+      margin: 1rem;
+      transition: text-shadow 0.3s ease-in-out;
+    }
   }
 
   p {

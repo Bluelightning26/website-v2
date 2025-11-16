@@ -18,7 +18,7 @@ import '../styles/globals.scss';
     margin-right: 13rem;
     border-radius: 1.25rem;
     font-size: 3.75rem;
-    position: relative; // maybe also 'fixed'/'sticky'
+    position: relative;
     z-index: 1000;
 
     a {
@@ -26,36 +26,26 @@ import '../styles/globals.scss';
       color: var(--white);
       text-decoration: none;
       text-shadow: 0.2rem 0.2rem 0.2rem var(--white-40);
-      /*
-      -webkit-text-stroke: #{$stroke-size} var(--white);
-      text-shadow: 2px 0 0 var(--white-40),
-      -2px 0 0 var(--white-40),
-      0 2px 0 var(--white-40),
-      0 -2px 0 var(--white-40),
-      1px 1px 0 var(--white-40),
-      -1px -1px 0 var(--white-40),
-      1px -1px 0 var(--white-40),
-      -1px 1px 0 var(--white-40);
-      */
 
       &:hover {
         color: var(--yellow);
         text-shadow: 0.3rem 0.3rem 0.3rem var(--yellow-40);
-
-
-        /*
-        -webkit-text-stroke: #{$stroke-size} var(--yellow-40);
-        text-shadow: 2px 0 0 var(--yellow-40),
-        -2px 0 0 var(--yellow-40),
-        0 2px 0 var(--yellow-40),
-        0 -2px 0 var(--yellow-40),
-        1px 1px 0 var(--yellow-40),
-        -1px -1px 0 var(--yellow-40),
-        1px -1px 0 var(--yellow-40),
-        -1px 1px 0 var(--yellow-40);
-         */
       }
     }
+
+    @media (max-width: 1150px) {
+      font-size: 2.5rem;
+      margin-right: 20%;
+    }
+
+    @media (max-width: 800px) {
+      font-size: 2rem;
+      margin-right: 20%;
+    }
+      @media (max-width: 650px) {
+        min-width: 15rem;
+        margin-right: 2%
+      }
   }
 
 </style>
