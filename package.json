@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "astro": "^5.15.5",
+    "astro": "^5.16.9",
     "autoprefixer": "^10.4.22",
     "postcss": "^8.5.6",
     "sass-embedded": "^1.93.3",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@astrojs/react": "^4.4.2",
     "@tailwindcss/vite": "^4.1.17",
-    "bootstrap-icons": "^1.13.1"
+    "bootstrap-icons": "^1.13.1",
+    "yaml": "^2.8.2"
   }
 }

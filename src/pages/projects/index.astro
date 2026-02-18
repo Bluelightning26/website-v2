@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+import { readFileSync } from 'fs';
+import { parse } from 'yaml';
+
+const file = readFileSync('src/content/projects.yaml', 'utf-8');
+const projects = parse(file);
+---
+
+<BaseLayout pageTitle="Projects">
+	<div class="projects-header">
+		<h1>Projects</h1>
+		<h2>Here are some things I've built</h2>
+	</div>
+
+	<div class="projects-grid">
+		{projects.map((project) => (
+			<div class="project-card">
+				<h3>{project.title}</h3>
+				<p class="project-description">{project.description}</p>
+				<div class="tech-tags">
+					{project.tech.map((t) => (
+						<span class="tag">{t}</span>
+					))}
+				</div>
+				<div class="project-links">
+					<a href={project.github} target="_blank" rel="noopener noreferrer">
+						<i class="bi bi-github"></i> Code
+					</a>
+					{project.live && (
+						<a href={project.live} target="_blank" rel="noopener noreferrer">
+							<i class="bi bi-box-arrow-up-right"></i> Live
+						</a>
+					)}
+				</div>
+			</div>
+		))}
+	</div>
+</BaseLayout>
+
+<style lang="scss">
+	.projects-header {
+		text-align: center;
+		margin-bottom: 2rem;
+
+		h2 {
+			margin-top: 0;
+		}
+	}
+
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+		gap: 2rem;
+		margin: 2rem;
+
+		@media (max-width: 600px) {
+			grid-template-columns: 1fr;
+			margin: 1rem;
+		}
+	}
+
+	.project-card {
+		background: var(--background-color);
+		border-radius: 1.5rem;
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+		&:hover {
+			transform: translateY(-0.25rem);
+
+		}
+
+		h3 {
+			font-size: 1.75rem;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.project-description {
+		font-size: 1rem;
+		font-weight: 400;
+		padding: 0;
+		margin: 0;
+		flex-grow: 1;
+	}
+
+	.tech-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.tag {
+		background: rgba(255, 255, 255, 0.15);
+		border-radius: 0.75rem;
+		padding: 0.25rem 0.75rem;
+		font-size: 0.85rem;
+		font-weight: 600;
+	}
+
+	.project-links {
+		display: flex;
+		gap: 1.5rem;
+		margin-top: 0.5rem;
+
+		a {
+			text-decoration: none;
+			font-size: 1rem;
+			font-weight: 600;
+			transition: opacity 0.2s ease;
+
+			&:hover {
+				opacity: 0.7;
+			}
+
+			i {
+				margin-right: 0.25rem;
+			}
+		}
+	}
+</style>

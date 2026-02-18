@@ -1,0 +1,22 @@
+- title: 3d snake
+  description: Snake ported to the third dimension! Made at Hack Club's Undercity Hackathon
+  tech:
+    - Hardware
+    - Raspberry Pi
+  github: https://github.com/bluelightning26/3d-snake
+  live: https://github.com/bluelightning26/3d-snake/readme.md
+
+- title: DhyanAi
+  description: is ChatGPT blocked in your school? Run this custom client!
+  tech:
+    - Astro
+    - TypeScript
+  github: https://github.com/Bluelightning26/school-ai
+
+- title: BluBoard
+  description: A custom 75% keyboard!
+  tech:
+    - KiCad
+    - OnShape
+    - KMK
+  github: https://github.com/Bluelightning26/BluBoard

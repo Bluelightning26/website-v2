@@ -1,0 +1,130 @@
+---
+
+---
+<div class="logos">
+  <div class="logos-slide">
+    <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" />
+    </a>
+    <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" />
+    </a>
+    <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" />
+    </a>
+    <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS" />
+    </a>
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" />
+    </a>
+    <a href="https://astro.build" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/astro/000000" alt="Astro" />
+    </a>
+    <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/vercel/000000" alt="Vercel" />
+    </a>
+    <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/netlify/00C7B7" alt="Netlify" />
+    </a>
+    <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firebase" />
+    </a>
+    <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite" />
+    </a>
+    <!-- Duplicate logos for infinite loop -->
+    <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" />
+    </a>
+    <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" />
+    </a>
+    <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" />
+    </a>
+    <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS" />
+    </a>
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" />
+    </a>
+    <a href="https://astro.build" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/astro/000000" alt="Astro" />
+    </a>
+    <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/vercel/000000" alt="Vercel" />
+    </a>
+    <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/netlify/00C7B7" alt="Netlify" />
+    </a>
+    <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firebase" />
+    </a>
+    <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite" />
+    </a>
+  </div>
+</div>
+
+
+<style lang="scss">
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+  }
+
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: var(--pink-40);
+    white-space: nowrap;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      content: "";
+      z-index: 2;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    &:hover .logos-slide {
+      transition: animation-play-state 0.5s, transform 2s;
+        animation-play-state: paused;
+    }
+
+    .logos-slide {
+      display: inline-block;
+      animation: 35s slide infinite linear;
+
+      img {
+        height: 4rem;
+        margin: 0 3rem;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s;
+      }
+
+      }
+    }
+  }
+
+</style>
