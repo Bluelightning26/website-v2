@@ -36,6 +36,13 @@ hackathons:
     image: ""
     github: ""
     live: ""
+  - name: Macondo
+    location: Bogotá, Colombia
+    period: "aug 2026"
+    description: ""
+    image: ""
+    github: "https://github.com/dhyans26/salsa-para-cabi"
+    live: "https://github.com/dhyans26/salsa-para-cabi/releases"
 
 # history: optional list of stints shown in a timeline modal when the card is clicked
 #   type: badge(s) on the stint — full-time | part-time | contractor | internship

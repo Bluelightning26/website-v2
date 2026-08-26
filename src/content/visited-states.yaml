@@ -2,6 +2,7 @@
 #to change countries on the mini-globe
 #visit components/WorldGlobe.astro and the # in const VISITED are the country codes
 # ty past self- this note came in helpful on 7/26/26
+# ty once again past self on aug 26th 2026
 visited-usa:
   - Alabama
   - Arizona

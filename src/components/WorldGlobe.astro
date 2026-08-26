@@ -194,7 +194,8 @@
   import type { Topology } from 'topojson-specification';
 
   // ISO 3166-1 numeric codes
-  const VISITED = new Set([840, 124, 826, 250, 276, 528, 784, 356]);
+  // use `https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes` if you're stuck
+  const VISITED = new Set([840, 124, 826, 250, 276, 528, 784, 356, 276, 702, 392, 170]);
 
   document.addEventListener('DOMContentLoaded', async () => {
     const host = document.querySelector<HTMLElement>('[data-globe-host]');
